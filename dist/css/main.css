@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #656c7c;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.container {
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.pricing-board {
+  padding: 98px 156px;
+  text-align: center;
+  background-color: #fff;
+}
+.pricing-board h1 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-plan-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+  gap: 24px;
+  text-align: left;
+}
+
+.pricing-plan-card-enterprise {
+  width: 360px;
+  height: 683;
+  border-radius: 16px;
+  padding: 32px 24px;
+  border: none;
+  background-color: #1769ff;
+  color: #fff;
+}
+.pricing-plan-card-enterprise h2 {
+  color: #fff;
+  font-weight: 400;
+  margin-left: 13px;
+}
+.pricing-plan-card-enterprise li {
+  list-style: none;
+  margin-top: 2rem;
+}
+.pricing-plan-card-enterprise li img {
+  margin-right: 19.42px;
+}
+.pricing-plan-card-enterprise p {
+  margin-top: 32px;
+}
+.pricing-plan-card-enterprise span {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fff;
+}
+.pricing-plan-card-enterprise .pricing-header {
+  display: flex;
+  align-items: center;
+}
+.pricing-plan-card-enterprise .pricing-header span {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 19px;
+  margin-left: 105px;
+  background-color: #fdb72e;
+  padding: 10px 18px;
+  border-radius: 40px;
+  color: #fff;
+}
+.pricing-plan-card-enterprise button {
+  margin-top: 100px;
+  width: 100%;
+  padding: 15px 110px;
+  color: #ea4c89;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 2px solid #fff;
+  height: 54px;
+}
+.pricing-plan-card-enterprise button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.pricing-plan-card-enterprise button {
+  margin-top: 44px;
+}
+
+.pricing-plan-card-free {
+  width: 360px;
+  height: 683;
+  border-radius: 16px;
+  padding: 32px 24px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+}
+.pricing-plan-card-free h2 {
+  color: #000000;
+  font-weight: 400;
+  margin-left: 13px;
+}
+.pricing-plan-card-free li {
+  list-style: none;
+  margin-top: 2rem;
+}
+.pricing-plan-card-free li img {
+  margin-right: 19.42px;
+}
+.pricing-plan-card-free p {
+  margin-top: 32px;
+}
+.pricing-plan-card-free span {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #000000;
+}
+.pricing-plan-card-free .pricing-header {
+  display: flex;
+  align-items: center;
+}
+.pricing-plan-card-free .pricing-header span {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 19px;
+  margin-left: 105px;
+  background-color: #fdb72e;
+  padding: 10px 18px;
+  border-radius: 40px;
+  color: #fff;
+}
+.pricing-plan-card-free button {
+  margin-top: 100px;
+  width: 100%;
+  padding: 15px 110px;
+  color: #ea4c89;
+  border-radius: 8px;
+  background-color: #ffecf0;
+  border: none;
+  height: 54px;
+}
+.pricing-plan-card-free button:hover {
+  background-color: #ea4c89;
+  color: #fff;
+}
+
+.pricing-plan-card-pro {
+  width: 360px;
+  height: 683;
+  border-radius: 16px;
+  padding: 32px 24px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0px 14px 30px rgba(204, 204, 204, 0.32);
+}
+.pricing-plan-card-pro h2 {
+  color: #000000;
+  font-weight: 400;
+  margin-left: 13px;
+}
+.pricing-plan-card-pro li {
+  list-style: none;
+  margin-top: 2rem;
+}
+.pricing-plan-card-pro li img {
+  margin-right: 19.42px;
+}
+.pricing-plan-card-pro p {
+  margin-top: 32px;
+}
+.pricing-plan-card-pro span {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #000000;
+}
+.pricing-plan-card-pro .pricing-header {
+  display: flex;
+  align-items: center;
+}
+.pricing-plan-card-pro .pricing-header span {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 19px;
+  margin-left: 105px;
+  background-color: #fdb72e;
+  padding: 10px 18px;
+  border-radius: 40px;
+  color: #fff;
+}
+.pricing-plan-card-pro button {
+  margin-top: 100px;
+  width: 100%;
+  padding: 15px 110px;
+  color: #ea4c89;
+  border-radius: 8px;
+  background-color: #ffecf0;
+  border: none;
+  height: 54px;
+}
+.pricing-plan-card-pro button:hover {
+  background-color: #ea4c89;
+  color: #fff;
+}

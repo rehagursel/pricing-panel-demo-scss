@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+$g-font-family: Inter, sans-serif;
+$g-font-size: 1rem;
+$g-font-size-large: $g-font-size * 2;
+$g-line-height: 1.5;
+
+$g-body-background-color: #fff;
+$g-container-background-color: #e5e5e5;
+
+$g-button-color: #ea4c89;
+$g-button-primary-background-color: #ffecf0;
+$g-button-primary-hover-background-color: #ea4c89;
+$g-button-secondary-background-color: #ffffff;
+
+$g-text-color: #656c7c;
+$g-text-dark-color: #000000;
+$g-text-light-color: #fff;
+$g-header-badge-color: #fdb72e;
+$g-pricing-plan-card-blue-background-color: #1769ff;
+$g-pricing-plan-card-light-background-color: #fff;
+
+$g-card-border: 1px solid #e6e6e6;
+$g-button-border: 2px solid $g-text-light-color;
+$g-box-shadow: 0px 14px 30px rgba(204, 204, 204, 0.32);
+
+@mixin define-pricing-plan-card(
+  $card-border: none,
+  $card-background-color: $g-pricing-plan-card-light-background-color,
+  $card-header-color: $g-text-dark-color,
+  $card-span-color: $g-text-dark-color,
+) {
+  width: 360px;
+  height: 683;
+  border-radius: 16px;
+  padding: 32px 24px;
+  border: $card-border;
+  background-color: $card-background-color;
+  
+  h2 {
+    color: $card-header-color;
+    font-weight: 400;
+    margin-left: 13px;
+  }
+
+  li {
+    list-style: none;
+    margin-top: 2rem;
+
+    img {
+      margin-right: 19.42px;
+    }
+  }
+
+  p {
+    margin-top: 32px;
+  }
+
+  span {
+    font-weight: 600;
+    font-size: $g-font-size-large;
+    color: $card-span-color;
+  }
+
+  .pricing-header {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: $g-font-size;
+      font-weight: 600;
+      line-height: 19px;
+      margin-left: 105px;
+      background-color: $g-header-badge-color;
+      padding: 10px 18px;
+      border-radius: 40px;
+      color: $g-text-light-color;
+    }
+  }
+}
+
+@mixin define-button(
+  $button-background-color: $g-button-primary-background-color,
+  $button-border: none,
+  $button-hover-background-color: $g-button-primary-hover-background-color
+) {
+  button {
+    margin-top: 100px;
+    width: 100%;
+    padding: 15px 110px;
+    color: $g-button-color;
+    border-radius: 8px;
+    background-color: $button-background-color;
+    border: $button-border;
+    height: 54px;
+
+    &:hover {
+      background-color: $button-hover-background-color;
+      color: $g-text-light-color;
+    }
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $g-body-background-color;
+  color: $g-text-color;
+  font-family: $g-font-family;
+  font-size: $g-font-size;
+  line-height: $g-line-height;
+}
+
+.container {
+  background-color: $g-container-background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.pricing-board {
+  padding: 98px 156px;
+  text-align: center;
+  background-color: $g-body-background-color;
+
+  h1 {
+    color: $g-text-dark-color;
+    font-size: $g-font-size-large;
+    margin-bottom: 1rem;
+  }
+}
+
+.pricing-plan-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+  gap: 24px;
+  text-align: left;
+}
+
+.pricing-plan-card-enterprise {
+  @include define-pricing-plan-card(
+    none,
+    $g-pricing-plan-card-blue-background-color,
+    $g-text-light-color,
+    $g-text-light-color
+  );
+  @include define-button(
+    $g-button-secondary-background-color,
+    $g-button-border,
+    transparent
+  );
+
+  color: $g-text-light-color;
+
+  button {
+    margin-top: 44px;
+  }
+}
+
+.pricing-plan-card-free {
+  @include define-pricing-plan-card($g-card-border);
+  @include define-button();
+}
+
+.pricing-plan-card-pro {
+  @include define-pricing-plan-card();
+  @include define-button();
+  box-shadow: $g-box-shadow;
+}
